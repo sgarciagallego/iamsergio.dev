@@ -42,6 +42,16 @@ p {
   font-size: 1em;
 }
 
+a {
+  text-decoration: none;
+  color: #B8B8B8;
+  transition: ease 0.1s;
+}
+
+a:hover {
+  color: #729BAC;
+}
+
 .mono {
   font-family: "Cascadia Code", "Fira Mono", "SF Mono", monospace;
   font-size: 1em;
