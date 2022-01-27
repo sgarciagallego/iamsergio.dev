@@ -1,0 +1,191 @@
+@font-face {
+  font-family: 'Cascadia Code', monospace;
+  src: url(./font/CascadiaCode.otf);
+}
+
+/* ! main */
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: #282828;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+img {
+  font-family: 'Fira Mono', monospace;
+}
+
+/* ! fonts */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 { font-family: 'Sora', sans-serif; }
+
+h1 { font-size: 3em; }
+h2 { font-size: 2.8em; }
+h3 { font-size: 2.5em; }
+h4 { font-size: 2.15em; }
+h5 { font-size: 1.8em; }
+h6 { font-size: 1.5em; }
+
+p {
+  font-family: 'Sora', sans-serif;
+  font-size: 1em;
+}
+
+.mono {
+  font-family: 'Cascadia Code', monospace;
+  font-size: 1em;
+}
+
+.container {
+  border: 3px solid blue;
+  padding: 0 35px;
+}
+
+/* nav menu */
+
+.fixedtop {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  overflow: hidden;
+  background-color: #282828;
+}
+
+nav ul {
+  list-style: none;
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul.left {
+  float: left;
+
+}
+
+nav img {
+  margin: 20px 20px;
+  width: 50px;
+  height: 50px;
+  transition: ease 0.1s;
+}
+
+nav img:hover {
+  filter: invert(63%) sepia(10%) saturate(1029%) hue-rotate(152deg) brightness(160%) contrast(88%);
+  -webkit-filter: invert(63%) sepia(10%) saturate(1029%) hue-rotate(152deg) brightness(160%) contrast(88%);
+}
+
+nav ul.right {
+  float: right;
+  margin: 35px 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #B8B8B8;
+  transition: ease 0.1s;
+}
+
+nav a#last {
+  padding: 10px 15px;
+  color: #729BAC;
+  border: 2px solid #729BAC;
+  border-radius: 6px;
+  transition: ease 0.1s;
+}
+
+nav a#last:hover {
+  background-color: #729BAC;
+  color: #282828;
+}
+
+nav a:hover {
+  color: #729BAC;
+}
+
+nav ul>li {
+  padding: 10px 10px;
+}
+
+nav ul.right>li>i {
+  margin-right: 3px;
+  font-style: normal;
+  color: #729BAC;
+}
+
+/* head */
+
+.head {
+  margin-top: 120px;
+  padding: 7.5% 12%;
+}
+
+[role="doc-subtitle"] {
+  margin-bottom: 15px;
+  color: #729BAC;
+  font-family: 'Cascadia Code';
+  font-size: 1em;
+  width: fit-content;
+}
+
+h1.myName {
+  margin: 15px 0;
+  color: #B8B8B8;
+  width: fit-content;
+}
+
+h2.myJob {
+  margin: 15px 0;
+  color: #707070;
+  width: fit-content;
+}
+
+p.myDesc {
+  margin-top: 30px;
+  color: #707070;
+  line-height: 25px;
+  max-width: 650px;
+}
+
+/* socials */
+
+.inline {
+  padding: 10px 0;
+
+}
+
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.social img {
+  margin: 4px 10px 0px 10px;
+  width: 40px;
+  height: 100%;
+  transition: ease 0.1s;
+}
+
+.social img:hover {
+  filter: invert(63%) sepia(10%) saturate(1029%) hue-rotate(152deg) brightness(160%) contrast(88%);
+  -webkit-filter: invert(63%) sepia(10%) saturate(1029%) hue-rotate(152deg) brightness(160%) contrast(88%);
+} 
+
+.social img#last {
+  margin-right: 25px;
+}
