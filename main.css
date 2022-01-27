@@ -1,5 +1,5 @@
 @font-face {
-  font-family: 'Cascadia Code', monospace;
+  font-family: "Cascadia Code", "Fira Mono", "SF Mono", monospace;
   src: url(./font/CascadiaCode.otf);
 }
 
@@ -18,7 +18,7 @@ body {
 }
 
 img {
-  font-family: 'Fira Mono', monospace;
+  font-family: "Cascadia Code", "Fira Mono", "SF Mono", monospace;
 }
 
 /* ! fonts */
@@ -28,7 +28,7 @@ h2,
 h3,
 h4,
 h5,
-h6 { font-family: 'Sora', sans-serif; }
+h6 { font-family: "Sora", Helvetica, Arial, sans-serif; }
 
 h1 { font-size: 3em; }
 h2 { font-size: 2.8em; }
@@ -38,12 +38,12 @@ h5 { font-size: 1.8em; }
 h6 { font-size: 1.5em; }
 
 p {
-  font-family: 'Sora', sans-serif;
+  font-family: "Sora", Helvetica, Arial, sans-serif;
   font-size: 1em;
 }
 
 .mono {
-  font-family: 'Cascadia Code', monospace;
+  font-family: "Cascadia Code", "Fira Mono", "SF Mono", monospace;
   font-size: 1em;
 }
 
@@ -134,7 +134,7 @@ nav ul.right>li>i {
 [role="doc-subtitle"] {
   margin-bottom: 15px;
   color: #729BAC;
-  font-family: 'Cascadia Code', monospace;
+  font-family: "Cascadia Code", "Fira Mono", "SF Mono", monospace;
   font-size: 1em;
   width: fit-content;
 }
