@@ -329,6 +329,6 @@ p.myDesc {
 }
 
 .experience .card ul.rolePoints {
-  list-style: ;
+  list-style: circle;
   max-width: 650px;
 }
