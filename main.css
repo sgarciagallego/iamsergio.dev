@@ -42,10 +42,15 @@ p {
   margin-bottom: 17px;
   font-family: Sora, Helvetica, Arial, sans-serif;
   font-size: 1em;
+  line-height: 22px;
 }
 
 p:last-child {
   margin-bottom: 0;
+}
+
+ul li {
+  line-height: 22px;
 }
 
 a {
@@ -86,6 +91,10 @@ a:hover {
 
 .eWave::before {
   content: "\01F44B";
+}
+
+.copyright::before {
+  content: "\000A9";
 }
 
 /* nav menu */
@@ -232,7 +241,7 @@ p.myDesc {
 /* about */
 
 .about {
-  padding: 10% 12%;
+  padding: 9% 12%;
 }
 
 .about .me {
@@ -331,4 +340,105 @@ p.myDesc {
 .experience .card ul.rolePoints {
   list-style: circle;
   max-width: 650px;
+}
+
+/* contact */
+
+.contact {
+  border: 3px solid blue;
+  padding: 9% 12% 2% 12%;
+}
+
+.contact .contactForm {
+  padding: 15px 45px;
+}
+
+.contact .contactForm .whyContact {
+  padding: 15px 0;
+}
+
+.contact .contactForm .whyContact p {
+  margin: auto;
+  text-align: center;
+  width: 80%;
+  min-width: 250px;
+}
+
+.contact .contactForm form input {
+  margin: 15px auto;
+  padding: 15px 20px;
+  border: 2px solid #707070;
+  border-radius: 6px;
+  display: block;
+  color: #B8B8B8;
+  background-color: #282828;
+  text-align: center;
+  font-family: "Cascadia Code", "Fira Mono", "SF Mono", monospace;
+  font-size: 16px;
+  width: 80%;
+  min-width: 250px;
+}
+
+::placeholder {
+  font-family: "Cascadia Code", "Fira Mono", "SF Mono", monospace;
+  font-size: 16px;
+  text-align: center;
+}
+
+::-webkit-input-placeholder {
+  font-family: "Cascadia Code", "Fira Mono", "SF Mono", monospace;
+  font-size: 16px;
+  text-align: center;
+}
+
+::-moz-placeholder {
+  font-family: "Cascadia Code", "Fira Mono", "SF Mono", monospace;
+  font-size: 16px;
+  text-align: center;
+}
+
+:-ms-input-placeholder {
+  font-family: "Cascadia Code", "Fira Mono", "SF Mono", monospace;
+  font-size: 16px;
+  text-align: center;
+}
+
+:-moz-placeholder {
+  font-family: "Cascadia Code", "Fira Mono", "SF Mono", monospace;
+  font-size: 16px;
+  text-align: center;
+}
+
+.contact .contactForm form button {
+  margin: auto;
+  padding: 10px 15px;
+  border: 2px solid #729BAC;
+  border-radius: 6px;
+  display: block;
+  color: #729BAC;
+  background-color: #282828;
+  font-family: "Cascadia Code", "Fira Mono", "SF Mono", monospace;
+  font-size: 14.4px;
+  transition: ease 0.1s;
+}
+
+.contact .contactForm form button:hover {
+  cursor: pointer;
+  color: #282828;
+  background-color: #729BAC;
+}
+
+/* footer */
+
+.allContact {
+  border: 3px solid red;
+  padding: 1% 12%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.allContact p {
+  font-family: "Cascadia Code", "Mira Mono", "SF Mono", monospace;
+  font-size: 0.8em;
 }
