@@ -7,18 +7,26 @@
 
 * {
   box-sizing: border-box;
-}
-
-html,
-body {
-  background-color: #282828;
+  scroll-behavior: smooth;
   margin: 0;
   padding: 0;
   border: 0;
 }
 
+html,
+body {
+  background-color: #282828;
+  font-family: Sora, Helvetica, Arial, sans-serif;
+  color: #707070;
+}
+
 img {
   font-family: "Cascadia Code", "Fira Mono", "SF Mono", monospace;
+}
+
+.container {
+  border: 3px solid blue;
+  padding: 0 35px;
 }
 
 /* ! fonts */
@@ -28,18 +36,24 @@ h2,
 h3,
 h4,
 h5,
-h6 { font-family: "Sora", Helvetica, Arial, sans-serif; }
+h6 { font-family: Sora, Helvetica, Arial, sans-serif; }
 
 h1 { font-size: 3em; }
 h2 { font-size: 2.8em; }
-h3 { font-size: 2.5em; }
-h4 { font-size: 2.15em; }
-h5 { font-size: 1.8em; }
-h6 { font-size: 1.5em; }
+h3 { font-size: 2em; }
+h4 { font-size: 1.8em; }
+h5 { font-size: 1.6em; }
+h6 { font-size: 1.4em; }
 
 p {
-  font-family: "Sora", Helvetica, Arial, sans-serif;
+  margin-bottom: 17px;
+  font-family: Sora, Helvetica, Arial, sans-serif;
   font-size: 1em;
+
+}
+
+p:last-child {
+  margin-bottom: 0;
 }
 
 a {
@@ -57,9 +71,10 @@ a:hover {
   font-size: 1em;
 }
 
-.container {
-  border: 3px solid blue;
-  padding: 0 35px;
+/* emojis */
+
+.eWave::before {
+  content: "\01F44B";
 }
 
 /* nav menu */
@@ -168,10 +183,10 @@ p.myDesc {
   max-width: 650px;
 }
 
-/* socials */
+/* social icons */
 
 .inline {
-  padding: 10px 0;
+  padding: 25px 0;
 
 }
 
@@ -198,4 +213,79 @@ p.myDesc {
 
 .social img#last {
   margin-right: 25px;
+}
+
+/* about */
+
+.about {
+  padding: 5% 12%; 
+}
+
+.about .heading {
+  margin-bottom: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.about .heading i {
+  margin-right: 5px;
+  font-style: normal;
+  color: #729BAC;
+  font-family: "Cascadia Code", "Fira Mono", "SF Mono", monospace;
+  font-size: 1.6em;
+}
+
+.about .heading h3 {
+  color: #B8B8B8;
+}
+
+.about .me {
+  display: flex;
+  align-items: initial;
+  padding: 15px 45px;
+}
+
+.about .me .longDesc {
+  margin-right: auto;
+  padding-right: 50px;
+}
+
+.about .me .myPic {
+  margin-left: auto;
+  padding-left: 50px;
+}
+
+.about .me .myPic img {
+  border: 3px solid #B8B8B8;
+  filter: grayscale(100%);
+  border-radius: 68% 32% 70% 30% / 30% 70% 30% 70%;
+  transition: ease 0.1s;
+}
+
+.about .me .myPic img:hover {
+  filter: grayscale(0%);
+}
+
+.techSkills {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  width: fit-content;
+}
+
+.techSkills li {
+  margin-top: 10px;
+  margin-right: 25px;
+}
+
+.techSkills li:last-child { margin-right: 0; }
+
+.techSkills li img {
+  cursor: pointer;
+  transition: ease 0.4s;
+}
+
+.techSkills li img:hover {
+  filter: brightness(180%);
 }
