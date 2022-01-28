@@ -345,7 +345,6 @@ p.myDesc {
 /* contact */
 
 .contact {
-  border: 3px solid blue;
   padding: 9% 12% 2% 12%;
 }
 
@@ -431,7 +430,6 @@ p.myDesc {
 /* footer */
 
 .allContact {
-  border: 3px solid red;
   padding: 1% 12%;
   display: flex;
   align-items: center;
