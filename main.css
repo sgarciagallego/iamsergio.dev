@@ -191,6 +191,14 @@ h1.myName {
   margin: 15px 0;
   color: #B8B8B8;
   width: fit-content;
+  transition: ease 0.3s;
+}
+
+h1.myName:hover {
+  animation: bounce 0.75s;
+  -webkit-animation: bounce 0.75s;
+  -moz-animation: bounce 0.75s;
+  -o-animation: bounce 0.75s;
 }
 
 h2.myJob {
@@ -241,7 +249,7 @@ p.myDesc {
 /* about */
 
 .about {
-  padding: 9% 12%;
+  padding: 10% 12%;
 }
 
 .about .me {
@@ -268,7 +276,9 @@ p.myDesc {
 }
 
 .about .me .myPic img:hover {
+  border: 3px solid #729BAC;
   filter: grayscale(0%);
+  transform: scale(1.03);
 }
 
 .techSkills {
@@ -345,7 +355,7 @@ p.myDesc {
 /* contact */
 
 .contact {
-  padding: 9% 12% 2% 12%;
+  padding: 2% 12%;
 }
 
 .contact .contactForm {
@@ -376,6 +386,21 @@ p.myDesc {
   font-size: 16px;
   width: 80%;
   min-width: 250px;
+}
+
+.contact .contactForm form textarea {
+  margin: 0 auto 15px auto;
+  padding: 15px 20px;
+  border: 2px solid #707070;
+  border-radius: 6px;
+  display: block;
+  color: #B8B8B8;
+  background-color: #282828;
+  text-align: center;
+  font-family: "Cascadia Code", "Fira Mono", "SF Mono", monospace;
+  font-size: 16px;
+  line-height: 25px;
+  width: 80%;
 }
 
 ::placeholder {
