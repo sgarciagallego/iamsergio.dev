@@ -56,20 +56,17 @@ and (min-device-width : 320px) and (max-device-width : 480px) {
   }
 
   nav ul.left {
-    margin-left: 37.6%;
-    margin-right: 37.6%;
-    float: left;
+    float:;
   }
 
-  nav img {
+  nav ul.left img {
     margin: 5px 5px -1.8px 5px;
     width: 50px;
     height: 50px;
   }
 
   nav ul.right {
-    float: right;
-    margin: 35px 20px;
+    display: none;
   }
 
   nav a {
