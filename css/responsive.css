@@ -55,10 +55,6 @@ and (min-device-width : 320px) and (max-device-width : 480px) {
     padding: 0;
   }
 
-  nav ul.left {
-    float:;
-  }
-
   nav ul.left img {
     margin: 5px 5px -1.8px 5px;
     width: 50px;
@@ -179,6 +175,7 @@ and (min-device-width : 320px) and (max-device-width : 480px) {
 
   .about .me .longDesc p {
     font-size: 0.9em;
+    text-align: justify;
   }
 
   .about .me .myPic {
@@ -201,13 +198,13 @@ and (min-device-width : 320px) and (max-device-width : 480px) {
 
   .techSkills li {
     margin-top: 10px;
-    margin-right: 25px;
+    margin-right: 18px;
   }
 
   .techSkills li:last-child { margin-right: 0; }
 
   .techSkills li img {
-    width: 25px;
+    width: 30px;
     cursor: pointer;
     filter: brightness(180%);
   }
@@ -260,6 +257,7 @@ and (min-device-width : 320px) and (max-device-width : 480px) {
     list-style: circle;
     max-width: 650px;
     font-size: 0.9em;
+    text-align: justify;
   }
 
   /* contact */
@@ -278,7 +276,7 @@ and (min-device-width : 320px) and (max-device-width : 480px) {
 
   .contact .contactForm .whyContact p {
     margin: auto;
-    width: 80%;
+    width: 100%;
     min-width: 260px;
     text-align: center;
     font-size: 0.9em;
