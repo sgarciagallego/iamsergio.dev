@@ -13,31 +13,372 @@
   
 }
 
-/* iPads (portrait) */  
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {  
-  
-}
-
-/* iPads (landscape) */  
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {  
-  
-}
-
 /* smartphones (portrait and landscape) */  
 
 @media only screen   
-and (min-device-width : 320px) and (max-device-width : 480px) {  
-  
-}
-  
-/* smartphones (portrait) */  
-@media only screen and (max-width : 320px) {  
-  
-}
+and (min-device-width : 320px) and (max-device-width : 480px) {
 
-/* smartphones (landscape) */  
-@media only screen and (min-width : 321px) {  
-  
+  /* general */
+
+  .heading {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0;
+  }
+
+  .heading i {
+    font-size: 1.25em;
+  }
+
+  .heading h3 {
+    font-size: 1.3em;
+  }
+
+  /* nav menu */
+
+  .fixedtop {
+    max-width: 100%;
+    max-height: 80px;
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+    width: 100%;
+    overflow: hidden;
+    background-color: #282828;
+  }
+
+  nav ul {
+    list-style: none;
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+  }
+
+  nav ul.left {
+    margin-left: 37.6%;
+    margin-right: 37.6%;
+    float: left;
+  }
+
+  nav img {
+    margin: 5px 5px -1.8px 5px;
+    width: 50px;
+    height: 50px;
+  }
+
+  nav ul.right {
+    float: right;
+    margin: 35px 20px;
+  }
+
+  nav a {
+    text-decoration: none;
+    color: #B8B8B8;
+    font-size: 0.9em;
+    transition: ease 0.1s;
+  }
+
+  nav a#last {
+    padding: 10px 15px;
+    color: #729BAC;
+    border: 2px solid #729BAC;
+    border-radius: 6px;
+    transition: ease 0.1s;
+  }
+
+  nav a#last:hover {
+    background-color: #729BAC;
+    color: #282828;
+  }
+
+  nav a:hover {
+    color: #729BAC;
+  }
+
+  nav ul>li {
+    padding: 10px 10px;
+  }
+
+  nav ul.right>li>i {
+    margin-right: 3px;
+    font-style: normal;
+    font-size: 0.9em;
+    color: #729BAC;
+  }
+  /* head */
+
+  .head {
+    margin-top: 80px;
+    padding: 5% 12%;
+  }
+
+  .head [role="doc-subtitle"] {
+    margin: 0 auto;
+    color: #729BAC;
+    font-family: "Cascadia Code", "Fira Mono", "SF Mono", monospace;
+    font-size: 0.8em;
+  }
+
+  h1.myName {
+    margin: 15px 0;
+    color: #B8B8B8;
+    font-size: 1.8em;
+    text-align: center;
+  }
+
+  h2.myJob {
+    margin: 15px 0 0 0;
+    color: #707070;
+    font-size: 1.5em;
+    text-align: center;
+  }
+
+  p.myDesc {
+    margin-top: 20px;
+    color: #707070;
+    font-size: 0.8em;
+    text-align: center;
+    line-height: 20px;
+  }
+
+  /* social icons */
+
+  .inline {
+    margin-bottom: 30px;
+    padding: 0;
+  }
+
+  .social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    margin-left: 15px;
+    padding: 0;
+  }
+
+  .social img {
+    margin: 4px 10px 0px 10px;
+    width: 20px;
+    height: 100%;
+  }
+
+  /* about */
+
+  .about {
+    padding: 5% 7.5%;
+  }
+
+  .about .me {
+    display: block;
+    padding: 15px 0 0 0;
+  }
+
+  .about .me .longDesc {
+    margin: 0;
+    padding: 0;
+  }
+
+  .about .me .longDesc p {
+    font-size: 0.8em;
+  }
+
+  .about .me .myPic {
+    margin: 30px 37.5px 10px 37.5px;
+    padding: 0;
+  }
+
+  .about .me .myPic img {
+    width: 200px;
+    height: 100%;
+    border-radius: 68% 32% 70% 30% / 30% 70% 30% 70%;
+  }
+
+  .techSkills {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+  }
+
+  .techSkills li {
+    margin-top: 10px;
+    margin-right: 25px;
+  }
+
+  .techSkills li:last-child { margin-right: 0; }
+
+  .techSkills li img {
+    width: 25px;
+    cursor: pointer;
+    filter: brightness(180%);
+  }
+
+  /* experience */
+
+  .experience {
+    padding: 5% 7.5%;
+  }
+
+  .experience .timeline {
+    padding: 10px 0;
+  }
+
+  .experience .card {
+    border-radius: 5px;
+    margin-bottom: 35px;
+  }
+
+  .experience .card:first-child {
+    margin-top: 15px;
+  }
+
+  .experience .card:last-child {
+    margin-bottom: 0;
+  }
+
+  .experience .card [role="doc-subtitle"].date {
+    margin-bottom: 10px;
+    color: #707070;
+    font-family: "Cascadia Code", "Fira Mono", "SF Mono", monospace;
+    font-size: 0.8em;
+  }
+
+  .experience .card h4 {
+    margin-bottom: 30px;
+    color: #B8B8B8;
+    font-size: 1.1em;
+  }
+
+  .experience .card h4 span.stylechar {
+    color: #729BAC;
+  }
+
+  .experience .card h4 a {
+    color: #729BAC;
+  }
+
+  .experience .card ul.rolePoints {
+    list-style: circle;
+    max-width: 650px;
+    font-size: 0.8em;
+  }
+
+  /* contact */
+
+  .contact {
+    padding: 2% 7.5%;
+  }
+
+  .contact .contactForm {
+    padding: 15px 0;
+  }
+
+  .contact .contactForm .whyContact {
+    padding: 15px 0;
+  }
+
+  .contact .contactForm .whyContact p {
+    margin: auto;
+    width: 80%;
+    min-width: 250px;
+    text-align: center;
+    font-size: 0.8em;
+  }
+
+  .contact .contactForm form input {
+    margin: 15px auto;
+    padding: 15px 20px;
+    border: 2px solid #707070;
+    border-radius: 6px;
+    display: block;
+    color: #B8B8B8;
+    background-color: #282828;
+    text-align: center;
+    font-family: "Cascadia Code", "Fira Mono", "SF Mono", monospace;
+    font-size: 16px;
+    width: 80%;
+    min-width: 250px;
+  }
+
+  .contact .contactForm form textarea {
+    margin: 0 auto 15px auto;
+    padding: 15px 20px;
+    border: 2px solid #707070;
+    border-radius: 6px;
+    display: block;
+    color: #B8B8B8;
+    background-color: #282828;
+    text-align: center;
+    font-family: "Cascadia Code", "Fira Mono", "SF Mono", monospace;
+    font-size: 16px;
+    line-height: 25px;
+    width: 92%;
+  }
+
+  ::placeholder {
+    font-family: "Cascadia Code", "Fira Mono", "SF Mono", monospace;
+    font-size: 16px;
+    text-align: center;
+  }
+
+  ::-webkit-input-placeholder {
+    font-family: "Cascadia Code", "Fira Mono", "SF Mono", monospace;
+    font-size: 16px;
+    text-align: center;
+  }
+
+  ::-moz-placeholder {
+    font-family: "Cascadia Code", "Fira Mono", "SF Mono", monospace;
+    font-size: 16px;
+    text-align: center;
+  }
+
+  :-ms-input-placeholder {
+    font-family: "Cascadia Code", "Fira Mono", "SF Mono", monospace;
+    font-size: 16px;
+    text-align: center;
+  }
+
+  :-moz-placeholder {
+    font-family: "Cascadia Code", "Fira Mono", "SF Mono", monospace;
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .contact .contactForm form button {
+    margin: auto;
+    padding: 10px 15px;
+    border: 2px solid #729BAC;
+    border-radius: 6px;
+    display: block;
+    color: #729BAC;
+    background-color: #282828;
+    font-family: "Cascadia Code", "Fira Mono", "SF Mono", monospace;
+    font-size: 14.4px;
+    transition: ease 0.1s;
+  }
+
+  .contact .contactForm form button:hover {
+    cursor: pointer;
+    color: #282828;
+    background-color: #729BAC;
+  }
+
+  /* footer */
+
+  .allContact {
+    padding: 1% 7.5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .allContact p {
+    font-family: "Cascadia Code", "Mira Mono", "SF Mono", monospace;
+    font-size: 0.7em;
+  }
 }
   
 /* iPhone 4 */  
