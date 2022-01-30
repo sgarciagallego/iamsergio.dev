@@ -80,15 +80,6 @@ and (min-device-width : 320px) and (max-device-width : 480px) {
     transition: ease 0.1s;
   }
 
-  nav a#last:hover {
-    background-color: #729BAC;
-    color: #282828;
-  }
-
-  nav a:hover {
-    color: #729BAC;
-  }
-
   nav ul>li {
     padding: 10px 10px;
   }
@@ -114,14 +105,14 @@ and (min-device-width : 320px) and (max-device-width : 480px) {
   }
 
   h1.myName {
-    margin: 15px 0;
+    margin: 15px auto;
     color: #B8B8B8;
     font-size: 2.1em;
     text-align: center;
   }
 
   h2.myJob {
-    margin: 15px 0 0 0;
+    margin: 15px auto 0 auto;
     color: #707070;
     font-size: 1.8em;
     text-align: center;
@@ -357,7 +348,7 @@ and (min-device-width : 320px) and (max-device-width : 480px) {
   /* footer */
 
   .allContact {
-    padding: 1% 7.5%;
+    padding: 5% 7.5%;
     display: flex;
     align-items: center;
     justify-content: center;
