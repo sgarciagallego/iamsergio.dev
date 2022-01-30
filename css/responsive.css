@@ -175,7 +175,6 @@ and (min-device-width : 320px) and (max-device-width : 480px) {
 
   .about .me .longDesc p {
     font-size: 0.9em;
-    text-align: justify;
   }
 
   .about .me .myPic {
@@ -193,12 +192,12 @@ and (min-device-width : 320px) and (max-device-width : 480px) {
     list-style: none;
     display: flex;
     align-items: center;
-    width: fit-content;
+    justify-content: center;
+    margin: auto;
   }
 
   .techSkills li {
-    margin-top: 10px;
-    margin-right: 18px;
+    margin: 10px 15px 0 auto;
   }
 
   .techSkills li:last-child { margin-right: 0; }
@@ -257,7 +256,6 @@ and (min-device-width : 320px) and (max-device-width : 480px) {
     list-style: circle;
     max-width: 650px;
     font-size: 0.9em;
-    text-align: justify;
   }
 
   /* contact */
