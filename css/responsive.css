@@ -9,8 +9,176 @@
 }
 
 /* iPads (portrait and landscape) */  
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {  
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
   
+  /* general */
+
+  .heading {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .heading i {
+    font-size: 1.8em;
+  }
+
+  .heading h3 {
+    font-size: 2.3em;
+  }
+
+  /* nav menu */
+
+  .fixedtop {
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+    width: 100%;
+    overflow: hidden;
+    background-color: #282828;
+  }
+
+  nav ul {
+    list-style: none;
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+  }
+
+  nav ul.left {
+    float: left;
+  }
+
+  nav img {
+    margin: 20px 20px;
+    width: 60px;
+    height: 60px;
+  }
+
+  /* head */
+
+  .head {
+    width: 100%;
+    margin-top: 120px;
+    padding: 35% 12%;
+  }
+
+  .head [role="doc-subtitle"] {
+    margin-bottom: 15px;
+    color: #729BAC;
+    font-family: "Cascadia Code", "Fira Mono", "SF Mono", monospace;
+    font-size: 1em;
+    width: fit-content;
+  }
+
+  h1.myName {
+    margin: 15px 0;
+    color: #B8B8B8;
+    width: fit-content;
+    transition: ease 0.3s;
+  }
+
+  h1.myName:hover {
+    animation: bounce 0.75s;
+    -webkit-animation: bounce 0.75s;
+    -moz-animation: bounce 0.75s;
+    -o-animation: bounce 0.75s;
+  }
+
+  h2.myJob {
+    margin: 15px 0;
+    color: #707070;
+    width: fit-content;
+  }
+
+  p.myDesc {
+    margin-top: 30px;
+    color: #707070;
+    line-height: 25px;
+    max-width: 650px;
+  }
+
+  /* social icons */
+
+  .inline {
+    padding: 25px 0;
+
+  }
+
+  .social {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .social img#last {
+    margin-right: 25px;
+  }
+
+  /* about */
+
+  .about {
+    padding: 20% 7.5% 10% 7.5%;
+  }
+
+  .about .me {
+    display: block;
+    align-items: initial;
+    padding: 15px 0;
+  }
+
+  .about .me .longDesc {
+    margin-right: 0;
+    padding-right: 0;
+  }
+
+  .about .me .myPic {
+    margin: 50px 0 10px 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  .about .me .myPic img {
+    width: 275px;
+    height: 100%;
+  }
+
+  /* experience */
+
+  .experience {
+    padding: 20% 7.5% 15% 7.5%;
+  }
+
+  .experience .timeline {
+    padding: 10px 0;
+  }
+
+  .experience .card {
+    margin-bottom: 125px;
+  }
+
+  .experience .card h4 {
+    font-size: 2em;
+  }
+
+  /* contact */
+
+  .contact {
+    padding: 20% 7.5%;
+  }
+
+  .contact .contactForm {
+    padding: 15px 0;
+  }
+
+  /* footer */
+
+  .allContact {
+    padding: 5% 12%;
+  }
 }
 
 /* smartphones (portrait and landscape) */  
