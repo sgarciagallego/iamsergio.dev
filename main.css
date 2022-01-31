@@ -15,7 +15,8 @@
 
 html,
 body {
-  background-color: #282828;
+  background: rgb(40,40,40);
+  background: linear-gradient(90deg, rgba(40,40,40,1) 0%, rgba(51,51,51,1) 50%, rgba(40,40,40,1) 100%);
   font-family: Sora, Helvetica, Arial, sans-serif;
   color: #707070;
 }
@@ -105,7 +106,8 @@ a:hover {
   z-index: 9999;
   width: 100%;
   overflow: hidden;
-  background-color: #282828;
+  background: rgb(40,40,40);
+  background: linear-gradient(90deg, rgba(40,40,40,1) 0%, rgba(51,51,51,1) 50%, rgba(40,40,40,1) 100%);
 }
 
 nav ul {
@@ -380,7 +382,7 @@ p.myDesc {
   border-radius: 6px;
   display: block;
   color: #B8B8B8;
-  background-color: #282828;
+  background-color: transparent;
   text-align: center;
   font-family: "Cascadia Code", "Fira Mono", "SF Mono", monospace;
   font-size: 16px;
@@ -395,7 +397,7 @@ p.myDesc {
   border-radius: 6px;
   display: block;
   color: #B8B8B8;
-  background-color: #282828;
+  background-color: transparent;
   text-align: center;
   font-family: "Cascadia Code", "Fira Mono", "SF Mono", monospace;
   font-size: 16px;
@@ -440,7 +442,7 @@ p.myDesc {
   border-radius: 6px;
   display: block;
   color: #729BAC;
-  background-color: #282828;
+  background-color: transparent;
   font-family: "Cascadia Code", "Fira Mono", "SF Mono", monospace;
   font-size: 14.4px;
   transition: ease 0.1s;
