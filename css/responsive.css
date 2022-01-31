@@ -1,23 +1,18 @@
-/* large screens */  
+/* ! large screens */  
 @media only screen and (min-width : 1824px) {  
     
 }
 
-/* desktops and laptops */  
-@media only screen and (min-width : 1224px) {  
-    
+/* ! desktops and laptops */  
+@media only screen and (min-width : 1224px) {
+
 }
 
-/* iPads (portrait and landscape) */  
+/* ! iPads (portrait and landscape) */
+
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
   
   /* general */
-
-  .heading {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-  }
 
   .heading i {
     font-size: 1.8em;
@@ -29,28 +24,11 @@
 
   /* nav menu */
 
-  .fixedtop {
-    position: fixed;
-    top: 0;
-    z-index: 9999;
-    width: 100%;
-    overflow: hidden;
-    background-color: #282828;
-  }
-
-  nav ul {
-    list-style: none;
-    display: inline-flex;
-    margin: 0;
-    padding: 0;
-  }
-
-  nav ul.left {
-    float: left;
+  nav ul.right {
+    margin: 40px 20px;
   }
 
   nav img {
-    margin: 20px 20px;
     width: 60px;
     height: 60px;
   }
@@ -59,63 +37,7 @@
 
   .head {
     width: 100%;
-    margin-top: 120px;
     padding: 35% 12%;
-  }
-
-  .head [role="doc-subtitle"] {
-    margin-bottom: 15px;
-    color: #729BAC;
-    font-family: "Cascadia Code", "Fira Mono", "SF Mono", monospace;
-    font-size: 1em;
-    width: fit-content;
-  }
-
-  h1.myName {
-    margin: 15px 0;
-    color: #B8B8B8;
-    width: fit-content;
-    transition: ease 0.3s;
-  }
-
-  h1.myName:hover {
-    animation: bounce 0.75s;
-    -webkit-animation: bounce 0.75s;
-    -moz-animation: bounce 0.75s;
-    -o-animation: bounce 0.75s;
-  }
-
-  h2.myJob {
-    margin: 15px 0;
-    color: #707070;
-    width: fit-content;
-  }
-
-  p.myDesc {
-    margin-top: 30px;
-    color: #707070;
-    line-height: 25px;
-    max-width: 650px;
-  }
-
-  /* social icons */
-
-  .inline {
-    padding: 25px 0;
-
-  }
-
-  .social {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-
-  .social img#last {
-    margin-right: 25px;
   }
 
   /* about */
@@ -126,7 +48,6 @@
 
   .about .me {
     display: block;
-    align-items: initial;
     padding: 15px 0;
   }
 
@@ -181,7 +102,13 @@
   }
 }
 
-/* smartphones (portrait and landscape) */  
+/* ! low-res tablets & landscape mobile */
+
+@media (min-width: 481px) and (max-width: 767px) {
+
+}
+
+/* ! smartphones (portrait and landscape) */  
 
 @media only screen   
 and (min-device-width : 320px) and (max-device-width : 480px) {
@@ -189,9 +116,6 @@ and (min-device-width : 320px) and (max-device-width : 480px) {
   /* general */
 
   .heading {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
     margin: 0;
   }
 
@@ -205,59 +129,14 @@ and (min-device-width : 320px) and (max-device-width : 480px) {
 
   /* nav menu */
 
-  .fixedtop {
-    max-width: 100%;
-    max-height: 80px;
-    position: fixed;
-    top: 0;
-    z-index: 9999;
-    width: 100%;
-    overflow: hidden;
-    background-color: #282828;
-  }
-
-  nav ul {
-    list-style: none;
-    display: inline-flex;
-    margin: 0;
-    padding: 0;
-  }
-
   nav ul.left img {
     margin: 5px 5px -1.8px 5px;
-    width: 50px;
-    height: 50px;
   }
 
   nav ul.right {
     display: none;
   }
 
-  nav a {
-    text-decoration: none;
-    color: #B8B8B8;
-    font-size: 0.9em;
-    transition: ease 0.1s;
-  }
-
-  nav a#last {
-    padding: 10px 15px;
-    color: #729BAC;
-    border: 2px solid #729BAC;
-    border-radius: 6px;
-    transition: ease 0.1s;
-  }
-
-  nav ul>li {
-    padding: 10px 10px;
-  }
-
-  nav ul.right>li>i {
-    margin-right: 3px;
-    font-style: normal;
-    font-size: 0.9em;
-    color: #729BAC;
-  }
   /* head */
 
   .head {
@@ -267,28 +146,21 @@ and (min-device-width : 320px) and (max-device-width : 480px) {
 
   .head [role="doc-subtitle"] {
     margin: 0 auto;
-    color: #729BAC;
-    font-family: "Cascadia Code", "Fira Mono", "SF Mono", monospace;
     font-size: 0.9em;
   }
 
   h1.myName {
-    margin: 15px auto;
-    color: #B8B8B8;
     font-size: 2.1em;
     text-align: center;
   }
 
   h2.myJob {
-    margin: 15px auto 0 auto;
-    color: #707070;
     font-size: 1.8em;
     text-align: center;
   }
 
   p.myDesc {
     margin-top: 20px;
-    color: #707070;
     font-size: 0.9em;
     text-align: center;
     line-height: 20px;
@@ -302,10 +174,7 @@ and (min-device-width : 320px) and (max-device-width : 480px) {
   }
 
   .social {
-    display: flex;
-    align-items: center;
     justify-content: center;
-    list-style: none;
     margin-left: 15px;
     padding: 0;
   }
@@ -345,12 +214,9 @@ and (min-device-width : 320px) and (max-device-width : 480px) {
   .about .me .myPic img {
     width: 200px;
     height: 100%;
-    border-radius: 68% 32% 70% 30% / 30% 70% 30% 70%;
   }
 
   .techSkills {
-    list-style: none;
-    display: flex;
     align-items: center;
     justify-content: center;
     margin: auto;
@@ -364,7 +230,6 @@ and (min-device-width : 320px) and (max-device-width : 480px) {
 
   .techSkills li img {
     width: 30px;
-    cursor: pointer;
     filter: brightness(180%);
   }
 
@@ -378,43 +243,15 @@ and (min-device-width : 320px) and (max-device-width : 480px) {
     padding: 10px 0;
   }
 
-  .experience .card {
-    border-radius: 5px;
-    margin-bottom: 35px;
-  }
-
-  .experience .card:first-child {
-    margin-top: 15px;
-  }
-
-  .experience .card:last-child {
-    margin-bottom: 0;
-  }
-
   .experience .card [role="doc-subtitle"].date {
-    margin-bottom: 10px;
-    color: #707070;
-    font-family: "Cascadia Code", "Fira Mono", "SF Mono", monospace;
     font-size: 0.9em;
   }
 
   .experience .card h4 {
-    margin-bottom: 30px;
-    color: #B8B8B8;
     font-size: 1.1em;
   }
 
-  .experience .card h4 span.stylechar {
-    color: #729BAC;
-  }
-
-  .experience .card h4 a {
-    color: #729BAC;
-  }
-
   .experience .card ul.rolePoints {
-    list-style: circle;
-    max-width: 650px;
     font-size: 0.9em;
   }
 
@@ -428,107 +265,28 @@ and (min-device-width : 320px) and (max-device-width : 480px) {
     padding: 15px 0;
   }
 
-  .contact .contactForm .whyContact {
-    padding: 15px 0;
-  }
-
   .contact .contactForm .whyContact p {
-    margin: auto;
     width: 100%;
     min-width: 260px;
-    text-align: center;
     font-size: 0.9em;
   }
 
-  .contact .contactForm form input {
-    margin: 15px auto;
-    padding: 15px 20px;
-    border: 2px solid #707070;
-    border-radius: 6px;
-    display: block;
-    color: #B8B8B8;
-    background-color: #282828;
-    text-align: center;
-    font-family: "Cascadia Code", "Fira Mono", "SF Mono", monospace;
-    font-size: 16px;
-    width: 80%;
-    min-width: 250px;
-  }
-
   .contact .contactForm form textarea {
-    margin: 0 auto 15px auto;
-    padding: 15px 20px;
-    border: 2px solid #707070;
-    border-radius: 6px;
-    display: block;
-    color: #B8B8B8;
-    background-color: #282828;
-    text-align: center;
-    font-family: "Cascadia Code", "Fira Mono", "SF Mono", monospace;
-    font-size: 16px;
-    line-height: 25px;
-    width: 80%;
     min-width: 250px;
-  }
-
-  ::placeholder {
-    font-family: "Cascadia Code", "Fira Mono", "SF Mono", monospace;
-    font-size: 16px;
-    text-align: center;
-  }
-
-  ::-webkit-input-placeholder {
-    font-family: "Cascadia Code", "Fira Mono", "SF Mono", monospace;
-    font-size: 16px;
-    text-align: center;
-  }
-
-  ::-moz-placeholder {
-    font-family: "Cascadia Code", "Fira Mono", "SF Mono", monospace;
-    font-size: 16px;
-    text-align: center;
-  }
-
-  :-ms-input-placeholder {
-    font-family: "Cascadia Code", "Fira Mono", "SF Mono", monospace;
-    font-size: 16px;
-    text-align: center;
-  }
-
-  :-moz-placeholder {
-    font-family: "Cascadia Code", "Fira Mono", "SF Mono", monospace;
-    font-size: 16px;
-    text-align: center;
-  }
-
-  .contact .contactForm form button {
-    margin: auto;
-    padding: 10px 15px;
-    border: 2px solid #729BAC;
-    border-radius: 6px;
-    display: block;
-    color: #729BAC;
-    background-color: #282828;
-    font-family: "Cascadia Code", "Fira Mono", "SF Mono", monospace;
-    font-size: 14.4px;
   }
 
   /* footer */
 
   .allContact {
     padding: 5% 7.5%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
   }
 
   .allContact p {
-    font-family: "Cascadia Code", "Mira Mono", "SF Mono", monospace;
     font-size: 0.7em;
   }
 }
   
-/* iPhone 4 */  
+/* ! iPhone 4 */  
 @media only screen and (-webkit-min-device-pixel-ratio:1.5), only screen and (min-device-pixel-ratio:1.5) {  
     
 }
