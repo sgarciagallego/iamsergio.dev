@@ -99,7 +99,7 @@ a:hover {
 }
 
 a.outLink::after {
-  content: url(/img/icons8-external-link.svg);
+  content: url(/assets/img/icon/icons8-external-link.svg);
   margin-left: 3px;
   margin-right: 5px;
   vertical-align: middle;
