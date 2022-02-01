@@ -141,7 +141,7 @@ and (min-device-width : 320px) and (max-device-width : 480px) {
 
   .head {
     margin-top: 80px;
-    padding: 5% 7.5%;
+    padding: 5% 7.5% 10% 7.5%;
   }
 
   .head [role="doc-subtitle"] {
