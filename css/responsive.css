@@ -98,7 +98,7 @@
   /* footer */
 
   .allContact {
-    padding: 5% 12%;
+    padding: 5% 2%;
   }
 }
 
@@ -161,6 +161,12 @@ and (min-device-width : 320px) and (max-device-width : 480px) {
 
   p.myDesc {
     margin-top: 20px;
+    font-size: 0.9em;
+    text-align: center;
+    line-height: 20px;
+  }
+
+  p.myDonations {
     font-size: 0.9em;
     text-align: center;
     line-height: 20px;
@@ -278,7 +284,7 @@ and (min-device-width : 320px) and (max-device-width : 480px) {
   /* footer */
 
   .allContact {
-    padding: 5% 7.5%;
+    padding: 5% 2%;
   }
 
   .allContact p {

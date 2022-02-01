@@ -88,7 +88,7 @@ a:hover {
   color: #B8B8B8;
 }
 
-/* emojis */
+/* icons */
 
 .eWave::before {
   content: "\01F44B";
@@ -96,6 +96,13 @@ a:hover {
 
 .copyright::before {
   content: "\000A9";
+}
+
+a.outLink::after {
+  content: url(/img/icons8-external-link.svg);
+  margin-left: 3px;
+  margin-right: 5px;
+  vertical-align: middle;
 }
 
 /* nav menu */
@@ -178,7 +185,7 @@ nav ul.right>li>i {
 
 .head {
   margin-top: 120px;
-  padding: 7.5% 12%;
+  padding: 5.5% 12%;
 }
 
 .head [role="doc-subtitle"] {
@@ -211,7 +218,11 @@ h2.myJob {
 
 p.myDesc {
   margin-top: 30px;
-  color: #707070;
+  line-height: 25px;
+  max-width: 650px;
+}
+
+p.myDonations {
   line-height: 25px;
   max-width: 650px;
 }
@@ -309,7 +320,7 @@ p.myDesc {
 /* experience */
 
 .experience {
-  padding: 9% 12%;
+  padding: 10% 12%;
 }
 
 .experience .timeline {
@@ -357,7 +368,7 @@ p.myDesc {
 /* contact */
 
 .contact {
-  padding: 2% 12%;
+  padding: 8% 12% 2% 12%;
 }
 
 .contact .contactForm {
@@ -457,7 +468,7 @@ p.myDesc {
 /* footer */
 
 .allContact {
-  padding: 1% 12%;
+  padding: 1% 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -466,4 +477,5 @@ p.myDesc {
 .allContact p {
   font-family: "Cascadia Code", "Mira Mono", "SF Mono", monospace;
   font-size: 0.8em;
+  text-align: center;
 }
