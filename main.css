@@ -214,6 +214,10 @@ h2.myJob {
   color: #707070;
 }
 
+span#typewriter {
+  border-right: 2px solid #707070;
+}
+
 p.myDesc {
   margin-top: 30px;
   line-height: 25px;
