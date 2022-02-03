@@ -374,6 +374,7 @@ p.myDonations {
 .experience .card ul.rolePoints {
   list-style: circle;
   max-width: 650px;
+  font-family: Sora, sans-serif;
 }
 
 /* contact */
