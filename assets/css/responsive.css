@@ -312,6 +312,11 @@ and (min-width : 320px) and (max-width : 480px) {
     padding: 0 2%;
   }
 
+  main.landing {
+    margin-top: 55px;
+    padding: 10% 5%;
+  }
+
   .head [role="doc-subtitle"] {
     margin: 0 auto;
     font-size: 0.9em;
