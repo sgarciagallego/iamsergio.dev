@@ -15,9 +15,8 @@
 
 html,
 body {
-  background-color: #282828;
-  background: url(/assets/img/bg.svg);
-  background-attachment: fixed;
+  background: rgb(40,40,40);
+  background: linear-gradient(90deg, rgba(40,40,40,1) 0%, rgba(51,51,51,1) 50%, rgba(40,40,40,1) 100%);
   color: #707070;
 }
 
@@ -113,8 +112,8 @@ a.outLink::after {
   z-index: 9999;
   width: 100%;
   overflow: hidden;
-  background: #282828;
-  background: url(/assets/img/bg.svg);
+  background: rgb(40,40,40);
+  background: linear-gradient(90deg, rgba(40,40,40,1) 0%, rgba(51,51,51,1) 50%, rgba(40,40,40,1) 100%);
 }
 
 nav ul {
