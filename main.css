@@ -184,8 +184,13 @@ nav ul.right>li>i {
 /* head */
 
 .head {
+  height: 100vh;
+}
+
+main.landing {
   margin-top: 120px;
-  padding: 5.5% 12%;
+  position: relative;
+  padding: 7.5% 12%;
 }
 
 .head [role="doc-subtitle"] {
@@ -232,8 +237,11 @@ p.myDonations {
 /* social icons */
 
 .inline {
-  padding: 25px 0;
-
+  position: absolute;
+  width: 100%;
+  right: 0;
+  bottom: 0;
+  padding: 20px 0;
 }
 
 .social {
