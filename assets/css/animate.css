@@ -39,3 +39,16 @@
     transform: translateY(-5px);
   }
 }
+
+/* blink */
+
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
