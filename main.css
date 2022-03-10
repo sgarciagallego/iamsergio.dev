@@ -1,6 +1,10 @@
 @font-face {
   font-family: "Cascadia Code", "Fira Mono", "SF Mono", monospace;
-  src: url(./font/CascadiaCode.otf);
+  src: url(/assets/font/CascadiaCode.otf);
+}
+@font-face {
+  font-family: "JetBrains Mono";
+  src: url(/assets/font/JetBrainsMono.ttf);
 }
 
 /* ! main */
@@ -21,7 +25,7 @@ body {
 }
 
 img {
-  font-family: "Cascadia Code", "Fira Mono", "SF Mono", monospace;
+  font-family: "JetBrains Mono", "Cascadia Code", "Fira Mono", "SF Mono", monospace;
 }
 
 /* ! fonts */
@@ -64,7 +68,7 @@ a:hover {
 }
 
 .mono {
-  font-family: "Cascadia Code", "Fira Mono", "SF Mono", monospace;
+  font-family: "JetBrains Mono", "Cascadia Code", "Fira Mono", "SF Mono", monospace;
   font-size: 1em;
 }
 
@@ -79,7 +83,7 @@ a:hover {
   margin-right: 5px;
   font-style: normal;
   color: #729BAC;
-  font-family: "Cascadia Code", "Fira Mono", "SF Mono", monospace;
+  font-family: "JetBrains Mono", "Cascadia Code", "Fira Mono", "SF Mono", monospace;
   font-size: 1.6em;
 }
 
@@ -195,7 +199,7 @@ main.landing {
 .head [role="doc-subtitle"] {
   margin-bottom: 15px;
   color: #729BAC;
-  font-family: "Cascadia Code", "Fira Mono", "SF Mono", monospace;
+  font-family: "JetBrains Mono", "Cascadia Code", "Fira Mono", "SF Mono", monospace;
   font-size: 1em;
   width: fit-content;
 }
@@ -354,7 +358,7 @@ p.myDonations {
 .experience .card [role="doc-subtitle"].date {
   margin-bottom: 10px;
   color: #707070;
-  font-family: "Cascadia Code", "Fira Mono", "SF Mono", monospace;
+  font-family: "JetBrains Mono", "Cascadia Code", "Fira Mono", "SF Mono", monospace;
   font-size: 0.9em;
 }
 
@@ -407,7 +411,7 @@ p.myDonations {
   color: #B8B8B8;
   background-color: transparent;
   text-align: center;
-  font-family: "Cascadia Code", "Fira Mono", "SF Mono", monospace;
+  font-family: "JetBrains Mono", "Cascadia Code", "Fira Mono", "SF Mono", monospace;
   font-size: 16px;
   width: 80%;
   min-width: 250px;
@@ -422,7 +426,7 @@ p.myDonations {
   color: #B8B8B8;
   background-color: transparent;
   text-align: center;
-  font-family: "Cascadia Code", "Fira Mono", "SF Mono", monospace;
+  font-family: "JetBrains Mono", "Cascadia Code", "Fira Mono", "SF Mono", monospace;
   font-size: 16px;
   line-height: 25px;
   width: 80%;
@@ -430,31 +434,31 @@ p.myDonations {
 }
 
 ::placeholder {
-  font-family: "Cascadia Code", "Fira Mono", "SF Mono", monospace;
+  font-family: "JetBrains Mono", "Cascadia Code", "Fira Mono", "SF Mono", monospace;
   font-size: 16px;
   text-align: center;
 }
 
 ::-webkit-input-placeholder {
-  font-family: "Cascadia Code", "Fira Mono", "SF Mono", monospace;
+  font-family: "JetBrains Mono", "Cascadia Code", "Fira Mono", "SF Mono", monospace;
   font-size: 16px;
   text-align: center;
 }
 
 ::-moz-placeholder {
-  font-family: "Cascadia Code", "Fira Mono", "SF Mono", monospace;
+  font-family: "JetBrains Mono", "Cascadia Code", "Fira Mono", "SF Mono", monospace;
   font-size: 16px;
   text-align: center;
 }
 
 :-ms-input-placeholder {
-  font-family: "Cascadia Code", "Fira Mono", "SF Mono", monospace;
+  font-family: "JetBrains Mono", "Cascadia Code", "Fira Mono", "SF Mono", monospace;
   font-size: 16px;
   text-align: center;
 }
 
 :-moz-placeholder {
-  font-family: "Cascadia Code", "Fira Mono", "SF Mono", monospace;
+  font-family: "JetBrains Mono", "Cascadia Code", "Fira Mono", "SF Mono", monospace;
   font-size: 16px;
   text-align: center;
 }
@@ -467,7 +471,7 @@ p.myDonations {
   display: block;
   color: #729BAC;
   background-color: transparent;
-  font-family: "Cascadia Code", "Fira Mono", "SF Mono", monospace;
+  font-family: "JetBrains Mono", "Cascadia Code", "Fira Mono", "SF Mono", monospace;
   font-size: 14.4px;
   transition: ease 0.1s;
 }
@@ -488,7 +492,7 @@ p.myDonations {
 }
 
 .allContact p {
-  font-family: "Cascadia Code", "Mira Mono", "SF Mono", monospace;
+  font-family: "JetBrains Mono", "Cascadia Code", "Mira Mono", "SF Mono", monospace;
   font-size: 0.8em;
   text-align: center;
 }
