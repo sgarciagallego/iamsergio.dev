@@ -208,13 +208,13 @@ h1.myName {
   margin: 15px 0;
   color: #B8B8B8;
   transition: ease 0.3s;
+  animation: tremble 6s infinite;
+  animation-delay: 1.5s;
 }
 
-h1.myName:hover {
-  animation: bounce 0.75s;
-  -webkit-animation: bounce 0.75s;
-  -moz-animation: bounce 0.75s;
-  -o-animation: bounce 0.75s;
+h1.myName a:hover {
+  text-decoration: none;
+  color: #B8B8B8;
 }
 
 h2.myJob {
