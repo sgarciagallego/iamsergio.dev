@@ -139,6 +139,7 @@ a.outLink::after {
   width: 100%;
   overflow: hidden;
   backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
 
 nav ul {
