@@ -6,11 +6,11 @@
 
 /* track */
 ::-webkit-scrollbar-track {
-  background: #282828;
+  background: #4BC0C8;
 }
 
 /* handle */
 ::-webkit-scrollbar-thumb {
   border-radius: 2em;
-  background: #707070;
+  background: #feac5e;
 }

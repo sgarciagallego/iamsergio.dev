@@ -19,9 +19,12 @@
 
 html,
 body {
-  background: rgb(40,40,40);
-  background: linear-gradient(90deg, rgba(40,40,40,1) 0%, rgba(51,51,51,1) 50%, rgba(40,40,40,1) 100%);
-  color: #707070;
+  background: linear-gradient(90deg, #feac5e, #c779d0, #4bc0c8);
+  background-size: 600% 600%;
+  -webkit-animation: bgGradientSwitch 30s ease infinite;
+  -moz-animation: bgGradientSwitch 30s ease infinite;
+  -o-animation: bgGradientSwitch 30s ease infinite;
+  animation: bgGradientSwitch 30s ease infinite;
 }
 
 img {
@@ -35,17 +38,28 @@ h2,
 h3,
 h4,
 h5,
-h6 { font-family: Sora, Helvetica, Arial, sans-serif; }
+h6 { 
+  font-family: Inter, Helvetica, Arial, sans-serif;
+  font-weight: 900;
+}
 
-h1 { font-size: 3em; }
-h2 { font-size: 2.8em; }
-h3 { font-size: 2em; }
-h4 { font-size: 1.3em; }
+h1 { font-size: 4em; }
+h2 { font-size: 3em; }
+h3 { 
+  font-size: 2.5em;
+  font-weight: 800;
+}
+h4 { 
+  font-size: 2em;
+  font-weight: 700;
+}
 
 p {
+  color: #FFF;
   margin-bottom: 17px;
-  font-family: Sora, Helvetica, Arial, sans-serif;
+  font-family: Inter, Helvetica, Arial, sans-serif;
   font-size: 1em;
+  font-weight: 300;
   line-height: 22px;
 }
 
@@ -54,17 +68,19 @@ p:last-child {
 }
 
 ul li {
+  color: #FFF;
+  font-weight: normal;
   line-height: 22px;
 }
 
 a {
   text-decoration: none;
-  color: #B8B8B8;
+  color: rgb(255, 255, 255);
   transition: ease 0.1s;
 }
 
 a:hover {
-  color: #729BAC;
+  color: #FFF;
 }
 
 .mono {
@@ -81,14 +97,16 @@ a:hover {
 
 .heading i {
   margin-right: 5px;
-  font-style: normal;
-  color: #729BAC;
+  border-radius: 6px;
+  background-color: rgba(255, 255, 255, 0.6);
+  color: rgba(0, 0, 0, 0.6);
   font-family: "JetBrains Mono", "Cascadia Code", "Fira Mono", "SF Mono", monospace;
   font-size: 1.6em;
+  font-style: normal;
 }
 
 .heading h3 {
-  color: #B8B8B8;
+  color: rgba(255, 255, 255, 0.6);
 }
 
 /* icons */
@@ -99,6 +117,10 @@ a:hover {
 
 .copyright::before {
   content: "\000A9";
+}
+
+a.outLink {
+  transition: ease 0.2s;
 }
 
 a.outLink::after {
@@ -116,8 +138,7 @@ a.outLink::after {
   z-index: 9999;
   width: 100%;
   overflow: hidden;
-  background: rgb(40,40,40);
-  background: linear-gradient(90deg, rgba(40,40,40,1) 0%, rgba(51,51,51,1) 50%, rgba(40,40,40,1) 100%);
+  backdrop-filter: blur(10px);
 }
 
 nav ul {
@@ -132,11 +153,15 @@ nav ul.left {
 
 }
 
-nav img {
-  margin: 20px 20px;
-  width: 50px;
-  height: 50px;
-  transition: ease 0.1s;
+nav svg {
+  margin: 12.5px 20px;
+  width: 65px;
+  height: 65px;
+  transition: ease 0.2s;
+}
+
+nav svg:hover {
+  transform: scale(1.1);
 }
 
 nav img:hover {
@@ -151,26 +176,29 @@ nav ul.right {
 
 nav a {
   text-decoration: none;
-  color: #B8B8B8;
+  color: #FFF;
   font-size: 0.9em;
   transition: ease 0.1s;
 }
 
-nav a#last {
+nav a.pgLinks#last {
   padding: 10px 15px;
-  color: #729BAC;
-  border: 2px solid #729BAC;
+  color: #FFF;
+  border: 2px solid #FFF;
   border-radius: 6px;
   transition: ease 0.1s;
 }
 
-nav a#last:hover {
-  background-color: #729BAC;
-  color: #282828;
+nav a.pgLinks#last:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #FFF;
+  border: 2px solid rgba(0, 0, 0, 0);
 }
 
-nav a:hover {
-  color: #729BAC;
+nav a.pgLinks:hover {
+  border-radius: 3px;
+  color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(255, 255, 255, 0.6);
 }
 
 nav ul>li {
@@ -181,7 +209,7 @@ nav ul.right>li>i {
   margin-right: 3px;
   font-style: normal;
   font-size: 0.9em;
-  color: #729BAC;
+  color: rgba(0, 0, 0, 0.6);
 }
 
 /* head */
@@ -198,7 +226,8 @@ main.landing {
 
 .head [role="doc-subtitle"] {
   margin-bottom: 15px;
-  color: #729BAC;
+  padding-left: 10px;
+  color: rgba(255, 255, 255, 0.6);
   font-family: "JetBrains Mono", "Cascadia Code", "Fira Mono", "SF Mono", monospace;
   font-size: 1em;
   width: fit-content;
@@ -206,7 +235,7 @@ main.landing {
 
 h1.myName {
   margin: 15px 0;
-  color: #B8B8B8;
+  color: #FFF !important;
   transition: ease 0.3s;
   animation: tremble 6s infinite;
   animation-delay: 1.5s;
@@ -214,16 +243,15 @@ h1.myName {
 
 h1.myName a:hover {
   text-decoration: none;
-  color: #B8B8B8;
 }
 
 h2.myJob {
   margin: 15px 0;
-  color: #707070;
+  color: rgba(255, 255, 255, 0.6)
 }
 
 span.blink {
-  border-right: 2px solid #707070;
+  border-right: 2px solid rgba(255, 255, 255, 0.6);
   animation: blink-animation 1s steps(5, start) infinite;
   -webkit-animation: blink-animation 1s steps(5, start) infinite;
 }
@@ -258,19 +286,18 @@ p.myDonations {
   padding: 0;
 }
 
-.social img {
+.social i {
   margin: 4px 10px 0px 10px;
-  width: 40px;
-  height: 100%;
-  transition: ease 0.1s;
+  color: #FFF;
+  font-size: 28px;
+  transition: ease 0.2s;
 }
 
-.social img:hover {
-  filter: invert(63%) sepia(10%) saturate(1029%) hue-rotate(152deg) brightness(160%) contrast(88%);
-  -webkit-filter: invert(63%) sepia(10%) saturate(1029%) hue-rotate(152deg) brightness(160%) contrast(88%);
+.social i:hover {
+  color: rgba(0, 0, 0, 0.6);
 } 
 
-.social img#last {
+.social i#last {
   margin-right: 25px;
 }
 
@@ -297,16 +324,9 @@ p.myDonations {
 }
 
 .about .me .myPic img {
-  border: 3px solid #B8B8B8;
-  filter: grayscale(100%);
+  border: 3px solid rgba(255, 255, 255, 0.6);
   border-radius: 68% 32% 70% 30% / 30% 70% 30% 70%;
   transition: ease 0.3s;
-}
-
-.about .me .myPic img:hover {
-  border: 3px solid #729BAC;
-  filter: grayscale(0%);
-  transform: scale(1.03);
 }
 
 .techSkills {
@@ -323,13 +343,11 @@ p.myDonations {
 
 .techSkills li:last-child { margin-right: 0; }
 
-.techSkills li img {
+.techSkills li i {
   cursor: pointer;
+  color: #FFF;
+  font-size: 32px;
   transition: ease 0.4s;
-}
-
-.techSkills li img:hover {
-  filter: brightness(180%);
 }
 
 /* experience */
@@ -357,28 +375,29 @@ p.myDonations {
 
 .experience .card [role="doc-subtitle"].date {
   margin-bottom: 10px;
-  color: #707070;
+  color: rgba(0, 0, 0, 0.6);
   font-family: "JetBrains Mono", "Cascadia Code", "Fira Mono", "SF Mono", monospace;
   font-size: 0.9em;
 }
 
 .experience .card h4 {
   margin-bottom: 30px;
-  color: #B8B8B8;
+  color: #FFF;
 }
 
 .experience .card h4 span.stylechar {
-  color: #729BAC;
+  color: rgba(0, 0, 0, 0.6);
 }
 
 .experience .card h4 a {
-  color: #729BAC;
+  color: rgba(0, 0, 0, 0.6);
 }
 
 .experience .card ul.rolePoints {
   list-style: circle;
   max-width: 650px;
-  font-family: Sora, sans-serif;
+  font-family: Inter, sans-serif;
+  font-weight: 900;
 }
 
 /* contact */
@@ -405,10 +424,10 @@ p.myDonations {
 .contact .contactForm form input {
   margin: 15px auto;
   padding: 15px 20px;
-  border: 2px solid #707070;
+  border: 2px solid #FFF;
   border-radius: 6px;
   display: block;
-  color: #B8B8B8;
+  color: #FFF;
   background-color: transparent;
   text-align: center;
   font-family: "JetBrains Mono", "Cascadia Code", "Fira Mono", "SF Mono", monospace;
@@ -420,10 +439,10 @@ p.myDonations {
 .contact .contactForm form textarea {
   margin: 0 auto 15px auto;
   padding: 15px 20px;
-  border: 2px solid #707070;
+  border: 2px solid #FFF;
   border-radius: 6px;
   display: block;
-  color: #B8B8B8;
+  color: #FFF;
   background-color: transparent;
   text-align: center;
   font-family: "JetBrains Mono", "Cascadia Code", "Fira Mono", "SF Mono", monospace;
@@ -434,30 +453,35 @@ p.myDonations {
 }
 
 ::placeholder {
+  color: #FFF;
   font-family: "JetBrains Mono", "Cascadia Code", "Fira Mono", "SF Mono", monospace;
   font-size: 16px;
   text-align: center;
 }
 
 ::-webkit-input-placeholder {
+  color: #FFF;
   font-family: "JetBrains Mono", "Cascadia Code", "Fira Mono", "SF Mono", monospace;
   font-size: 16px;
   text-align: center;
 }
 
 ::-moz-placeholder {
+  color: #FFF;
   font-family: "JetBrains Mono", "Cascadia Code", "Fira Mono", "SF Mono", monospace;
   font-size: 16px;
   text-align: center;
 }
 
 :-ms-input-placeholder {
+  color: #FFF;
   font-family: "JetBrains Mono", "Cascadia Code", "Fira Mono", "SF Mono", monospace;
   font-size: 16px;
   text-align: center;
 }
 
 :-moz-placeholder {
+  color: #FFF;
   font-family: "JetBrains Mono", "Cascadia Code", "Fira Mono", "SF Mono", monospace;
   font-size: 16px;
   text-align: center;
@@ -466,10 +490,10 @@ p.myDonations {
 .contact .contactForm form button {
   margin: auto;
   padding: 10px 15px;
-  border: 2px solid #729BAC;
+  border: 2px solid #FFF;
   border-radius: 6px;
   display: block;
-  color: #729BAC;
+  color: #FFF;
   background-color: transparent;
   font-family: "JetBrains Mono", "Cascadia Code", "Fira Mono", "SF Mono", monospace;
   font-size: 14.4px;
@@ -478,8 +502,9 @@ p.myDonations {
 
 .contact .contactForm form button:hover {
   cursor: pointer;
-  color: #282828;
-  background-color: #729BAC;
+  border: 2px solid rgba(0, 0, 0, 0);
+  color: #FFF;
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 /* footer */
