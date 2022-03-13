@@ -55,11 +55,11 @@ h4 {
 }
 
 p {
-  color: #FFF;
+  color: rgba(255, 255, 255, 0.6);
   margin-bottom: 17px;
   font-family: Inter, Helvetica, Arial, sans-serif;
   font-size: 1em;
-  font-weight: 300;
+  font-weight: 500;
   line-height: 22px;
 }
 
@@ -68,7 +68,7 @@ p:last-child {
 }
 
 ul li {
-  color: #FFF;
+  color: rgba(255, 255, 255, 0.6);
   font-weight: normal;
   line-height: 22px;
 }
@@ -96,9 +96,7 @@ a:hover {
 }
 
 .heading i {
-  margin-right: 5px;
-  border-radius: 6px;
-  background-color: rgba(255, 255, 255, 0.6);
+  margin-right: 10px;
   color: rgba(0, 0, 0, 0.6);
   font-family: "JetBrains Mono", "Cascadia Code", "Fira Mono", "SF Mono", monospace;
   font-size: 1.6em;
@@ -123,11 +121,8 @@ a.outLink {
   transition: ease 0.2s;
 }
 
-a.outLink::after {
-  content: url(/assets/img/icon/icons8-external-link.svg);
-  margin-left: 3px;
-  margin-right: 5px;
-  vertical-align: middle;
+a.outLink:hover {
+  color: rgba(0, 0, 0, 0.6);
 }
 
 /* nav menu */
@@ -179,7 +174,7 @@ nav a {
   text-decoration: none;
   color: #FFF;
   font-size: 0.9em;
-  transition: ease 0.1s;
+  transition: ease 0.15s;
 }
 
 nav a.pgLinks#last {
@@ -187,19 +182,17 @@ nav a.pgLinks#last {
   color: #FFF;
   border: 2px solid #FFF;
   border-radius: 6px;
-  transition: ease 0.1s;
+  transition: ease 0.2s;
 }
 
 nav a.pgLinks#last:hover {
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(255, 255, 255, 0.3);
   color: #FFF;
-  border: 2px solid rgba(0, 0, 0, 0);
 }
 
 nav a.pgLinks:hover {
   border-radius: 3px;
   color: rgba(0, 0, 0, 0.6);
-  background-color: rgba(255, 255, 255, 0.6);
 }
 
 nav ul>li {
@@ -238,7 +231,7 @@ h1.myName {
   margin: 15px 0;
   color: #FFF !important;
   transition: ease 0.3s;
-  animation: tremble 6s infinite;
+  animation: tremble 4s infinite;
   animation-delay: 1.5s;
 }
 
@@ -288,18 +281,33 @@ p.myDonations {
 }
 
 .social i {
-  margin: 4px 10px 0px 10px;
+  margin: 4px 10px 0 10px;
   color: #FFF;
   font-size: 28px;
-  transition: ease 0.2s;
 }
 
-.social i:hover {
-  color: rgba(0, 0, 0, 0.6);
-} 
+.social i#github:hover { color: #211f1f; } 
+
+.social i#linkedin:hover { color: #0072b1; }
+
+.social i#donate:hover { color: #fae295; }
+
+.social i#instagram:hover { 
+  background: linear-gradient(210deg, #833ab4, #fd1d1d, #fcb045);
+  background-size: 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-text-fill-color: transparent;
+}
 
 .social i#last {
   margin-right: 25px;
+}
+
+.social i#last:hover {
+  color: #00aced;
 }
 
 /* about */
@@ -351,6 +359,50 @@ p.myDonations {
   transition: ease 0.4s;
 }
 
+.techSkills li i#html5:hover {
+  background: linear-gradient(90deg, #e24e23, #f06629);
+  background-size: 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-text-fill-color: transparent;
+}
+
+.techSkills li i#css3:hover {
+  background: linear-gradient(90deg, #1a73b9, #1c88c7);
+  background-size: 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-text-fill-color: transparent;
+}
+
+.techSkills li i#git:hover {
+  background: linear-gradient(90deg, #ef5132, #3c2d00);
+  background-size: 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-text-fill-color: transparent;
+}
+
+.techSkills li i#js:hover {
+  background: linear-gradient(90deg, #c2a10d, #e1bf0a);
+  background-size: 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-text-fill-color: transparent;
+}
+
+.techSkills li i#react:hover {
+  color: #00d8fc;
+}
+
 /* experience */
 
 .experience {
@@ -383,7 +435,7 @@ p.myDonations {
 
 .experience .card h4 {
   margin-bottom: 30px;
-  color: #FFF;
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .experience .card h4 span.stylechar {
