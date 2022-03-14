@@ -79,10 +79,6 @@ a {
   transition: ease 0.1s;
 }
 
-a:hover {
-  color: #FFF;
-}
-
 .mono {
   font-family: "JetBrains Mono", "Cascadia Code", "Fira Mono", "SF Mono", monospace;
   font-size: 1em;
@@ -293,7 +289,7 @@ p.myDonations {
 .social i#donate:hover { color: #fae295; }
 
 .social i#instagram:hover { 
-  background: linear-gradient(210deg, #833ab4, #fd1d1d, #fcb045);
+  background: linear-gradient(210deg, #833ab4, #fd1d1d, #fcb045), -webkit-linear-gradient(210deg, #833ab4, #fd1d1d, #fcb045);
   background-size: 100%;
   background-clip: text;
   -webkit-background-clip: text;
@@ -356,7 +352,6 @@ p.myDonations {
   cursor: pointer;
   color: #FFF;
   font-size: 32px;
-  transition: ease 0.4s;
 }
 
 .techSkills li i#html5:hover {
