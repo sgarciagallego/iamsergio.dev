@@ -557,7 +557,13 @@ p.myDonations {
 
 /* footer */
 
+.footerEase svg {
+  display: block;
+  height: 100%;
+}
+
 .allContact {
+  background-color: rgba(0, 0, 0, 0.6);
   padding: 1% 0;
   display: flex;
   align-items: center;
