@@ -283,6 +283,10 @@ p.myDonations {
   transition: ease 0.3s;
 }
 
+.social i#last {
+  margin-right: 25px;
+}
+
 .social i:hover {
   color: rgba(1, 1, 1, 0.6);
 }
