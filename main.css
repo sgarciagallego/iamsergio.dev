@@ -170,7 +170,7 @@ nav a {
   text-decoration: none;
   color: #FFF;
   font-size: 0.9em;
-  transition: ease 0.15s;
+  transition: ease 0.2s;
 }
 
 nav a.pgLinks#last {
@@ -280,30 +280,11 @@ p.myDonations {
   margin: 4px 10px 0 10px;
   color: #FFF;
   font-size: 28px;
+  transition: ease 0.3s;
 }
 
-.social i#github:hover { color: #211f1f; } 
-
-.social i#linkedin:hover { color: #0072b1; }
-
-.social i#donate:hover { color: #fae295; }
-
-.social i#instagram:hover { 
-  background: linear-gradient(210deg, #833ab4, #fd1d1d, #fcb045), -webkit-linear-gradient(210deg, #833ab4, #fd1d1d, #fcb045);
-  background-size: 100%;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent; 
-  -moz-text-fill-color: transparent;
-}
-
-.social i#last {
-  margin-right: 25px;
-}
-
-.social i#last:hover {
-  color: #00aced;
+.social i:hover {
+  color: rgba(1, 1, 1, 0.6);
 }
 
 /* about */
@@ -352,50 +333,11 @@ p.myDonations {
   cursor: pointer;
   color: #FFF;
   font-size: 32px;
+  transition: ease 0.3s;
 }
 
-.techSkills li i#html5:hover {
-  background: linear-gradient(90deg, #e24e23, #f06629);
-  background-size: 100%;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent; 
-  -moz-text-fill-color: transparent;
-}
-
-.techSkills li i#css3:hover {
-  background: linear-gradient(90deg, #1a73b9, #1c88c7);
-  background-size: 100%;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent; 
-  -moz-text-fill-color: transparent;
-}
-
-.techSkills li i#git:hover {
-  background: linear-gradient(90deg, #ef5132, #3c2d00);
-  background-size: 100%;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent; 
-  -moz-text-fill-color: transparent;
-}
-
-.techSkills li i#js:hover {
-  background: linear-gradient(90deg, #c2a10d, #e1bf0a);
-  background-size: 100%;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent; 
-  -moz-text-fill-color: transparent;
-}
-
-.techSkills li i#react:hover {
-  color: #00d8fc;
+.techSkills li i:hover {
+  color: rgba(1, 1, 1, 0.6);
 }
 
 /* experience */
@@ -557,14 +499,7 @@ p.myDonations {
 
 /* footer */
 
-.footerEase svg {
-  display: block;
-  height: 100%;
-  width: 100%;
-}
-
 .allContact {
-  background-color: rgba(0, 0, 0, 0.6);
   padding: 1% 0;
   display: flex;
   align-items: center;

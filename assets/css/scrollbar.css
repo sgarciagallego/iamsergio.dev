@@ -6,11 +6,11 @@
 
 /* track */
 ::-webkit-scrollbar-track {
-  background: transparent;
+  background: rgb(1, 1, 1);
 }
 
 /* handle */
 ::-webkit-scrollbar-thumb {
   border-radius: 2em;
-  background: #feac5e;
+  background: rgb(255, 255, 255);
 }
